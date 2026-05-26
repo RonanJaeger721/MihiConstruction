@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Montserrat', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-accent-brand: #C2410C; /* High-end Burnt Orange / Terracotta Construction Accent */
+  --color-accent-gold: #D4A373; /* Subtle Modern Architectural Gold Accent */
+  --color-charcoal-deep: #121212; /* Rich Architectural Charcoal Solid Dark */
+  --color-charcoal-medium: #1C1C1E; /* Structural Dark Gray */
+  --color-charcoal-light: #2C2C2E; /* Light Element Charcoal Border */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #FAFAFA;
+    color: #171717;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+  
+  /* Modern custom scrollbar representing steel and concrete layers */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F3F4F6;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+}
+
+/* Custom CSS for Before/After Slider Interaction */
+.slider-thumb-divider {
+  pointer-events: none;
+}
+
